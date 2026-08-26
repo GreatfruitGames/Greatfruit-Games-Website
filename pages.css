@@ -39,9 +39,9 @@
      left to right and uses the first one it finds on the visitor's computer,
      so the page renders instantly and works offline. Charter and Iowan ship
      with Macs, Georgia ships with everything. */
-  --font-body: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-body: "Berlin Sans FB", "Iowan Old Style", Georgia, "Times New Roman", serif;
 
-  --max-width: 34rem; /* how wide the column gets. Try 30rem, or 42rem. */
+  --max-width: 102rem; /* how wide the column gets. Try 30rem, or 42rem. */
 }
 
 /* --------------------------------------------------------------------------
