@@ -1,0 +1,120 @@
+/* ==========================================================================
+   PAGES.CSS
+
+   THIS IS YOUR FILE. Edit anything here.
+
+   It has two halves. The first is the design settings: change a color or a
+   font here and it updates everywhere on the site at once. The second is the
+   layout of individual sections.
+   ========================================================================== */
+
+/* The engine's stylesheet, pulled in here so that the HTML files only have to
+   link one stylesheet instead of two. It comes first, and everything you write
+   below overrides it, because when two rules are equally specific the one
+   further down the file wins.
+
+   @import only works before any other rule in the file, so this line has to
+   stay at the very top. */
+@import url("engine/global.css");
+
+/* --------------------------------------------------------------------------
+   1. YOUR DESIGN SETTINGS
+
+   These replace the plain fallbacks in engine/global.css, which the @import
+   above pulled in ahead of them.
+
+   The site is one column of serif text on white, with links in blue. There
+   are no boxes, no dividing lines, and no second color. That restraint is the
+   design, and it is easy to lose: a background tint here and a border there
+   and it stops looking like a document and starts looking like a dashboard.
+   Change --max-width first and see how much difference it makes.
+   -------------------------------------------------------------------------- */
+:root {
+  --paper: #ffffff;   /* page background, plain white */
+  --ink: #111111;     /* text, nearly black but not pure black */
+  --accent: #0000cc;  /* links. Try #8b0000 for a dark red instead. */
+  --visited: #551a8b; /* links you have already clicked */
+
+  /* No fonts are downloaded from the internet. The browser walks this list
+     left to right and uses the first one it finds on the visitor's computer,
+     so the page renders instantly and works offline. Charter and Iowan ship
+     with Macs, Georgia ships with everything. */
+  --font-body: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+
+  --max-width: 34rem; /* how wide the column gets. Try 30rem, or 42rem. */
+}
+
+/* --------------------------------------------------------------------------
+   2. HERO
+   The top of each page: the heading and the sentence or two under it.
+   -------------------------------------------------------------------------- */
+
+/* A line of text set slightly larger than the rest reads as an opening
+   paragraph without needing to be a different color or a different font. */
+.hero-lede {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   3. TOOLS
+   A list written as a sentence rather than stacked into bullet points, since
+   six short words do not need six lines.
+   -------------------------------------------------------------------------- */
+.skill-list {
+  list-style: none;
+}
+
+/* display: inline makes the <li> items sit in a row instead of stacking. */
+.skill-list li {
+  display: inline;
+}
+
+/* ::after adds something to the end of every item that is not the last one.
+   Here that is a comma and a space, so the list reads like a sentence but
+   stays a real list in the HTML. */
+.skill-list li:not(:last-child)::after {
+  content: ", ";
+}
+
+/* --------------------------------------------------------------------------
+   4. CONTACT
+   -------------------------------------------------------------------------- */
+.contact-links {
+  list-style: none;
+}
+
+.contact-links li {
+  margin-bottom: 0.15rem;
+}
+
+/* --------------------------------------------------------------------------
+   5. PROJECT LIST
+   Used on projects.html. Each project is a heading, the tools under it, and a
+   paragraph. Nothing boxes them in; the gap between them is what separates
+   one from the next, the same as the sections on the home page.
+   -------------------------------------------------------------------------- */
+.project {
+  margin-bottom: var(--space-xl);
+}
+
+/* Italics mark the tools line as an aside about the project rather than part
+   of the description. */
+.project-tools {
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   6. SMALL SCREENS
+   A few adjustments on top of the ones in engine/global.css.
+   -------------------------------------------------------------------------- */
+@media (max-width: 700px) {
+  .hero-lede {
+    font-size: 1.1rem;
+  }
+
+  .project {
+    margin-bottom: var(--space-lg);
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- This first line tells the browser this is a modern HTML file. Leave it. -->
+<html lang="en">
+
+<head>
+  <!-- Everything in <head> is information ABOUT the page. None of it shows up
+       on the page itself. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CHANGE THIS: shows in the browser tab and in search results. -->
+  <title>Your Name</title>
+  <meta name="description" content="Portfolio of Your Name, a computer science student.">
+
+  <!-- One stylesheet. pages.css pulls in the engine's stylesheet itself. -->
+  <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       HEADER
+       This is empty on purpose. The menu is built from what you wrote in
+       site.js and put in here by engine/components.js, so it only has to be
+       written once instead of once per page.
+       ====================================================================== -->
+  <header class="site-header" id="site-header"></header>
+
+  <!-- ======================================================================
+       MAIN
+       Everything unique to this page goes inside <main>.
+
+       Every section is the same shape: a heading, then text under it. There
+       are no columns and no boxes to fit things into, so adding a section of
+       your own is a matter of copying one and changing the words.
+       ====================================================================== -->
+  <main>
+
+    <!-- HERO
+         The opening. It is the only section whose heading is an <h1> and the
+         only one set larger than the body text, which is what makes it read
+         as the start of the page. -->
+    <section class="container">
+      <!-- CHANGE THIS: your name, then one sentence about what you do. Being
+           specific reads better than trying to sound impressive. -->
+      <h1>Your Name</h1>
+
+      <p class="hero-lede">
+        Second-year computer science student. I build small tools that fix
+        things that annoy me, and I am looking for a summer internship.
+      </p>
+
+      <!-- Two ordinary links in a sentence. A link that has been dressed up
+           as a button is not more clickable than one that has not. -->
+      <p>
+        You can <a href="projects.html">look at what I have built</a>, or
+        <a href="#contact">get in touch</a>.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container" id="about">
+      <h2>About</h2>
+
+      <!-- CHANGE THIS: two or three sentences. Where you study or work, how
+           you got into it, what you are building right now. -->
+      <p>
+        I got into programming by modding games in high school, mostly to
+        make them harder. These days I spend my free time on web projects and
+        small scripts that automate the boring parts of coursework.
+      </p>
+      <p>
+        Outside of code I run, cook badly, and read too much science fiction.
+      </p>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="container">
+      <h2>Tools</h2>
+
+      <!-- CHANGE THIS: add or remove <li> lines. The commas between them are
+           drawn by CSS, so do not type them in here. -->
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container" id="contact">
+      <h2>Contact</h2>
+
+      <p>Email is fastest. I reply within a day or two.</p>
+
+      <!-- CHANGE THESE: your real links. mailto: opens the visitor's email
+           app with your address already filled in. -->
+      <ul class="contact-links">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/yourusername">github.com/yourusername</a></li>
+        <li><a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Also filled in from site.js. -->
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <!-- The scripts go last, after the HTML above exists, so that they can find
+       the header and footer they need to fill in. site.js comes first because
+       components.js reads what is in it. -->
+  <script src="site.js"></script>
+  <script src="engine/components.js"></script>
+
+</body>
+
+</html>
