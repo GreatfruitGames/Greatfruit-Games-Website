@@ -33,6 +33,7 @@ for (const item of site.nav) {
 /* innerHTML replaces everything inside a tag with the HTML you give it. */
 header.innerHTML = `
   <nav class="nav container">
+    <img src="GG Larger-cropped.png" class="nav-icon"></img>
     <a href="index.html" class="nav-logo">${site.name}</a>
     <ul class="nav-links">${menuItems}</ul>
   </nav>

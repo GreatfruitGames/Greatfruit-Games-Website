@@ -13,7 +13,9 @@
 const site = {
 
   /* Your name, shown at the top left of every page. */
-  name: "Your Name",
+  name: "Greatfruit Games",
+
+   href: "GG Larger-cropped.png",
 
   /* The menu. Each line is one item.
 
@@ -30,6 +32,6 @@ const site = {
 
      &copy; is the code for the copyright symbol, and {year} is swapped for
      the current year when the page loads, so the footer never goes stale. */
-  footer: "&copy; {year} Your Name",
+  footer: "&copy; {year} Greatfruit Games",
 
 };

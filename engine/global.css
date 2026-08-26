@@ -188,6 +188,7 @@ section {
   gap: var(--space-sm) var(--space-md);
   padding-top: var(--space-lg);
   padding-bottom: var(--space-xl);
+  background-color: peachpuff;
 }
 
 /* Your name is not a link to anywhere useful from the home page, so it is set
@@ -215,6 +216,14 @@ section {
   text-decoration: none;
 }
 
+
+
+.nav-icon {
+  width: 20%;
+  position: relative;
+  offset-anchor: center;
+  top: var(--space-lg);
+}
 /* --------------------------------------------------------------------------
    6. FOOTER
    -------------------------------------------------------------------------- */
@@ -222,6 +231,7 @@ section {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-lg);
   font-size: 0.9rem;
+  
 }
 
 /* --------------------------------------------------------------------------
