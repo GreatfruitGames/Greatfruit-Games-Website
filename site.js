@@ -26,6 +26,7 @@ const site = {
   nav: [
     { text: "Home", href: "index.html" },
     { text: "Projects", href: "projects.html" },
+    { text: "About", href: "about.html"}
   ],
 
   /* The footer line.
