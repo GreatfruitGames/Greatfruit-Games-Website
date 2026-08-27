@@ -172,6 +172,17 @@ section {
   margin-bottom: var(--space-xl);
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* --------------------------------------------------------------------------
    5. HEADER AND NAVIGATION
 
@@ -239,7 +250,7 @@ section {
    Everything in here only applies when the window is 700px wide or narrower,
    which is roughly phone size.
    -------------------------------------------------------------------------- */
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   .container {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
@@ -251,5 +262,9 @@ section {
 
   section {
     margin-bottom: var(--space-lg);
+  }
+
+  .column {
+    width: 100%;
   }
 }
