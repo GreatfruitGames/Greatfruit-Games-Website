@@ -175,6 +175,20 @@ section {
 .column {
   float: left;
   width: 50%;
+  /* background-color: rgb(27, 13, 13); */
+  vertical-align: center;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(27, 13, 13);
 }
 
 .row:after {
@@ -250,7 +264,7 @@ section {
    Everything in here only applies when the window is 700px wide or narrower,
    which is roughly phone size.
    -------------------------------------------------------------------------- */
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .container {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
@@ -266,5 +280,7 @@ section {
 
   .column {
     width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }

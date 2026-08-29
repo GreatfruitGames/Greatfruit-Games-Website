@@ -30,8 +30,8 @@
    Change --max-width first and see how much difference it makes.
    -------------------------------------------------------------------------- */
 :root {
-  --paper: #ffffff;   /* page background, plain white */
-  --ink: #111111;     /* text, nearly black but not pure black */
+  --paper: rgb(77, 56, 18);   /* page background, plain white */
+  --ink: #ffffff;     /* text, nearly black but not pure black */
   --accent: #0000cc;  /* links. Try #8b0000 for a dark red instead. */
   --visited: #551a8b; /* links you have already clicked */
 
@@ -41,7 +41,7 @@
      with Macs, Georgia ships with everything. */
   --font-body: "Berlin Sans FB", "Iowan Old Style", Georgia, "Times New Roman", serif;
 
-  --max-width: 102rem; /* how wide the column gets. Try 30rem, or 42rem. */
+  --max-width: 42rem; /* how wide the column gets. Try 30rem, or 42rem. */
 }
 
 /* --------------------------------------------------------------------------
