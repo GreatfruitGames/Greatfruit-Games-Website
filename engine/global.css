@@ -182,6 +182,7 @@ section {
 
 .row {
   margin: 0 -5px;
+  padding: 0 0 10px;
 }
 
 .card {
@@ -205,15 +206,25 @@ section {
    phone. If your menu ever grows past what fits, wrapping onto a second line
    is a better answer than hiding it behind a button.
    -------------------------------------------------------------------------- */
+.site-header {
+  /*padding-top: var(--space-xl);*/
+  /*padding-bottom: var(--space-lg);*/
+  /*max-height: var(--space-sm);*/
+  font-size: 0.9rem;
+  background-color: #111111;
+  border-bottom: 10px;
+  border-color: darkgrey;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-sm) var(--space-md);
-  padding-top: var(--space-lg);
-  padding-bottom: var(--space-xl);
-  background-color: peachpuff;
+  
+  /*padding-top: var(--space-lg);*/
+  /*padding-bottom: var(--space-xl);*/
 }
 
 /* Your name is not a link to anywhere useful from the home page, so it is set
@@ -256,7 +267,7 @@ section {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-lg);
   font-size: 0.9rem;
-  
+  background-color: #111111;
 }
 
 /* --------------------------------------------------------------------------
