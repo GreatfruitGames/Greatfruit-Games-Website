@@ -23,11 +23,16 @@ const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
 /* Build the menu, one <li> per item in site.nav. The item matching the page
    you are on gets class="active", which global.css styles differently. */
-let menuItems = "";
+const menuItems = [];
+let buttons = ""
 
 for (const item of site.nav) {
   const isCurrent = item.href === currentPage;
-  menuItems += `<li><a href="${item.href}"${isCurrent ? ' class="active"' : ""}>${item.text}</a></li>`;
+  menuItems.push(`<a href="${item.href}"${isCurrent ? ' class="active"' : ""}>${item.text}</a>`);
+}
+
+for (let i = 0; i < menuItems.length; i++) {
+   buttons += `<button class="button">${menuItems[i]}</button>`
 }
 
 /* innerHTML replaces everything inside a tag with the HTML you give it. */
@@ -35,7 +40,9 @@ header.innerHTML = `
   <nav class="nav container">
     <img src="GG Larger-cropped.png" class="nav-icon"></img>
     <a href="index.html" class="nav-logo">${site.name}</a>
-    <ul class="nav-links">${menuItems}</ul>
+    <div class="btn-group">
+      ${buttons}
+    </div>
   </nav>
 `;
 
