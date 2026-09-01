@@ -56,9 +56,15 @@ const footerText = site.footer.replace("{year}", thisYear);
 
 footer.innerHTML = `<div class="container"><p>${footerText}</p></div>`;
 
-const cloud = 
+const clouds = document.getElementsByClassName("cloud");
 
-function makeCloud() {
-   const offset = Math.random() * 100
-   
+console.log(clouds);
+
+for (let i = 0; i < clouds.length; i++) {
+   let Rand1 = Math.random() * (12.0 - 5.0 + 1.0) + 5.0;
+   console.log(Rand1);
+   let Rand2 = Math.random() * (document.documentElement.scrollHeight - 10.0 + 1.0) + 10.0;
+   console.log(Rand2);
+   clouds[i].style.animationDuration = `${Rand1}s`;
+   clouds[i].style.top = `${Rand2}px`;
 }

@@ -37,6 +37,8 @@
   --max-width: 34rem; /* how wide the column of text gets */
 
   --cloud-offset: 0vh;
+
+  overflow-x: hidden;
 }
 
 /* --------------------------------------------------------------------------
@@ -322,8 +324,14 @@ section {
   padding-bottom: var(--space-lg);
   font-size: 0.9rem;
   text-align: center;
-  background-color: #111111;
+  background-color: #333333;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  border-width: 1rem;
+  border-color: #4F8834;
+  border-style: solid;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -361,17 +369,18 @@ section {
 @keyframes slideLeftAnimation {
   0% { transform: translateX(-5vw); opacity: 0; }
   10% { opacity: 1;}
-  50% { transform: translateX(50vw);}
+  50% { transform: translateX(10vw);}
   90% { opacity: 1;}
-  100% { transform: translateX(100vw); opacity: 0;}
+  100% { transform: translateX(25vw); opacity: 0;}
 }
 
 .cloud {
-  transform: translateY(--cloud-offset);
   animation-name: slideLeftAnimation;
-  animation-duration: 10s;
   animation-timing-function: linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: both;
+  filter: blur(2px);
+  scale: 500%;
+  z-index: -1;
 }

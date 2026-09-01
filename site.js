@@ -34,5 +34,4 @@ const site = {
      &copy; is the code for the copyright symbol, and {year} is swapped for
      the current year when the page loads, so the footer never goes stale. */
   footer: "&copy;{year} Greatfruit Games",
-
 };
