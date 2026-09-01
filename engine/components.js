@@ -28,7 +28,7 @@ let buttons = ""
 
 for (const item of site.nav) {
   const isCurrent = item.href === currentPage;
-  menuItems.push(`<a href="${item.href}"${isCurrent ? ' class="active"' : ""}>${item.text}</a>`);
+  menuItems.push(`<a href="${item.href}"${isCurrent ? ' class="active"' : ""}  style="color:white; text-decoration:none;">${item.text}</a>`);
 }
 
 for (let i = 0; i < menuItems.length; i++) {
