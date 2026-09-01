@@ -27,7 +27,7 @@
   --accent: #0000cc;  /* links */
   --visited: #551a8b; /* links you have already clicked */
 
-  --font-body: serif;
+  --font-body: Sans;
 
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -186,10 +186,13 @@ section {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   padding: 16px;
   text-align: center;
   background-color: rgb(27, 13, 13);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #777777;
 }
 
 .row:after {
@@ -210,10 +213,14 @@ section {
   /*padding-top: var(--space-xl);*/
   /*padding-bottom: var(--space-lg);*/
   /*max-height: var(--space-sm);*/
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   background-color: #111111;
-  border-bottom: 10px;
-  border-color: darkgrey;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-color: #777777;
 }
 
 .nav {
