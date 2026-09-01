@@ -16,6 +16,8 @@
 const header = document.getElementById("site-header");
 const footer = document.getElementById("site-footer");
 
+
+const cloud_controller = document.getElementById("backdrop-controller")
 /* Which file is open right now, for example "projects.html". The address ends
    in a slash when someone visits the site without naming a file, and in that
    case the browser is showing index.html. */
@@ -53,3 +55,10 @@ const thisYear = new Date().getFullYear();
 const footerText = site.footer.replace("{year}", thisYear);
 
 footer.innerHTML = `<div class="container"><p>${footerText}</p></div>`;
+
+const cloud = 
+
+function makeCloud() {
+   const offset = Math.random() * 100
+   
+}

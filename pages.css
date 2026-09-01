@@ -30,7 +30,7 @@
    Change --max-width first and see how much difference it makes.
    -------------------------------------------------------------------------- */
 :root {
-  --paper: rgb(77, 56, 18);   /* page background, plain white */
+  --paper: #4fa3e9;   /* page background, plain white */
   --ink: #ffffff;     /* text, nearly black but not pure black */
   --accent: #0000cc;  /* links. Try #8b0000 for a dark red instead. */
   --visited: #551a8b; /* links you have already clicked */
