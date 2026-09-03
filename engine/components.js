@@ -54,7 +54,7 @@ header.innerHTML = `
 const thisYear = new Date().getFullYear();
 const footerText = site.footer.replace("{year}", thisYear);
 
-footer.innerHTML = `<div class="container"><p>${footerText}</p></div>`;
+footer.innerHTML = `<div class="container"><p>${footerText}</p><p style="text-align:left;">Follow me on: <a href="https://www.youtube.com/@greatfruit_games"><img src="yt_icon_white_digital.png" style="min-height:10px; display:inline; max-height:50px; vertical-align:middle;"</a></p></div>`;
 
 const clouds = document.getElementsByClassName("cloud");
 
