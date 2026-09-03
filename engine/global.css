@@ -386,3 +386,7 @@ section {
   scale: 500%;
   z-index: -1;
 }
+
+.nav-icon {
+  top: var(--space-md)
+}
