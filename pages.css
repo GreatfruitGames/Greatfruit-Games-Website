@@ -32,8 +32,8 @@
 :root {
   --paper: linear-gradient(0deg, #0052D4 0%, #65C7F7 50%, #9CECFB 100%);;   /* page background, plain white */
   --ink: #ffffff;     /* text, nearly black but not pure black */
-  --accent: #0000cc;  /* links. Try #8b0000 for a dark red instead. */
-  --visited: #551a8b; /* links you have already clicked */
+  --accent: #7e8dfc;  /* links. Try #8b0000 for a dark red instead. */
+  --visited: #9957b3; /* links you have already clicked */
 
   /* No fonts are downloaded from the internet. The browser walks this list
      left to right and uses the first one it finds on the visitor's computer,
